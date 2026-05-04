@@ -69,7 +69,7 @@ export const Testimonials = () => {
           text-sm font-medium tracking-wider 
           uppercase animate-fade-in"
           >
-            What People Say
+            What People Say  (AI Generated)
           </span>
           <h2
             className="text-4xl md:text-5xl 

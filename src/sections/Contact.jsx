@@ -26,7 +26,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Ahmedabad, Gujarat, India",
+    value: "Ghaziabad(Delhi NCR),Uttar Pradesh, India",
     href: "#",
   },
 ];
