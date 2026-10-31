@@ -81,10 +81,10 @@ export const About = () => {
                 <GraduationCap className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
                 <div>
                   <div className="text-xs font-mono font-semibold text-slate-200">
-                    Vivekananda Institute of Technology, GGSIPU
+                    Vivekananda Institute of Professional Studies (VIPS, GGSIPU)
                   </div>
                   <div className="text-[11px] font-mono text-cyan-400 mt-0.5">
-                    CGPA: 8.65 • B.Tech
+                    BCA • CGPA: 8.65
                   </div>
                 </div>
               </div>

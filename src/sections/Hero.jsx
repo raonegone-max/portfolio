@@ -52,7 +52,7 @@ const terminalCommands = {
   projects:
     "1. AI Interview Prep Planner (React, Node.js, GenAI LLM API) | 2. EventHub (React, Express, MongoDB, JWT) | 3. Blog Management System (React, Appwrite, Tailwind CSS)",
   education:
-    "Vivekananda Institute of Technology, GGSIPU (CGPA: 8.65) | XII (CBSE): St Thomas School, Indrapuram (87% | 2025)",
+    "Vivekananda Institute of Professional Studies (VIPS, GGSIPU) — BCA (CGPA: 8.65) | XII (CBSE): St Thomas School, Indrapuram (87% | 2025)",
   responsibilities:
     "ACE Technical Society, VIPS (2025 - Present): Web Development team & Event Supervisor for departmental technical activities.",
   contact:
@@ -139,8 +139,8 @@ export const Hero = () => {
 
               <p className="text-base sm:text-lg text-slate-400 max-w-xl leading-relaxed">
                 Hi, I'm <span className="text-slate-100 font-semibold">Aryan Gupta</span> — an aspiring
-                Software & Full-Stack Developer studying at{" "}
-                <span className="text-cyan-300">Vivekananda Institute of Technology, GGSIPU</span> (CGPA: 8.65). I specialize in building
+                Software & Full-Stack Developer pursuing BCA at{" "}
+                <span className="text-cyan-300">VIPS, GGSIPU</span> (CGPA: 8.65). I specialize in building
                 interactive web applications, full-stack systems with Node.js & Appwrite, and Generative AI-powered tools.
               </p>
             </div>
@@ -178,7 +178,7 @@ export const Hero = () => {
               <div className="bg-slate-900/40 p-3 rounded-xl border border-slate-800/60">
                 <div className="text-xl sm:text-2xl font-bold font-mono text-cyan-400">8.65</div>
                 <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider">
-                  CGPA (VIT, GGSIPU)
+                  CGPA (VIPS, GGSIPU)
                 </div>
               </div>
               <div className="bg-slate-900/40 p-3 rounded-xl border border-slate-800/60">

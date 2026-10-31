@@ -315,7 +315,7 @@ export const Skills = () => {
         <div className="mt-14 p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div>
             <div className="text-2xl font-bold font-mono text-cyan-400">8.65</div>
-            <div className="text-xs text-slate-400 font-mono mt-1">CGPA (Vivekananda Institute of Technology)</div>
+            <div className="text-xs text-slate-400 font-mono mt-1">CGPA (BCA @ VIPS, GGSIPU)</div>
           </div>
           <div>
             <div className="text-2xl font-bold font-mono text-purple-400">AWS ESSENTIALS</div>

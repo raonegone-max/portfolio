@@ -17,16 +17,16 @@ const experiences = [
   },
   {
     period: "2025 — Present",
-    role: "Undergraduate Degree (B.Tech)",
-    company: "Vivekananda Institute of Technology, GGSIPU",
+    role: "BCA (Bachelor of Computer Applications)",
+    company: "Vivekananda Institute of Professional Studies (VIPS, GGSIPU)",
     bullets: [
-      "Current Academic Performance: CGPA 8.65.",
+      "Current Academic Performance: CGPA 8.65 in BCA.",
       "Core focus on C++, C, JavaScript, Modular JS, Data Structures, and scalable full-stack web architectures.",
       "Actively participate in technical events and workshops organized by ACE.",
     ],
-    technologies: ["CGPA: 8.65", "C++", "C", "Data Structures", "Algorithms", "Modular JS"],
+    technologies: ["BCA", "CGPA: 8.65", "C++", "C", "Data Structures", "Algorithms", "Modular JS"],
     current: true,
-    tag: "EDUCATION_CGPA_8.65",
+    tag: "BCA_CGPA_8.65",
     icon: GraduationCap,
   },
   {
