@@ -54,7 +54,6 @@ export const About = () => {
             <p>
               I am an aspiring Software Developer currently pursuing my Bachelor of Computer Applications (BCA) at{" "}
               <span className="text-white font-medium">Vivekananda Institute of Professional Studies (VIPS, GGSIPU)</span>{" "}
-              with an <span className="text-[#ffd000] font-bold">8.65 CGPA</span>.
             </p>
             <p className="text-zinc-400">
               My technical foundation centers on full-stack web development and user-focused engineering. I have hands-on experience building deployed applications like <span className="text-white font-medium">EventHub</span> (campus RSVP system on Vercel & Render), Generative AI applications with LLM APIs, and BaaS systems with Appwrite.
