@@ -127,7 +127,7 @@ export const Hero = () => {
         <div className="absolute bottom-6 right-4 sm:right-12 lg:right-20 z-20">
           <div className="sticker-badge bg-[#a6e82e] text-black px-4 py-2.5 rounded-full rotate-6 shadow-[3px_3px_0px_#000] cursor-default text-xs">
             <Globe className="w-3.5 h-3.5" />
-            <span>AWS CERTIFIED • 8.65 CGPA</span>
+            <span>AWS CERTIFIED </span>
           </div>
         </div>
       </div>
