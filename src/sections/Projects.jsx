@@ -16,8 +16,8 @@ const projects = [
       "Prompts an LLM to generate targeted technical and behavioral interview questions specific to the role.",
       "Features a structured preparation roadmap (topics to review, skill gaps, suggested timeline) with decoupled architecture.",
     ],
-    link: "https://github.com/raonegonemax",
-    github: "https://github.com/raonegonemax",
+    link: "https://github.com/raonegone-max",
+    github: "https://github.com/raonegone-max",
     isLive: false,
   },
   {
@@ -35,7 +35,7 @@ const projects = [
       "JWT authentication in HTTP-only cookies with logout token blacklisting and server-enforced capacity limits.",
     ],
     link: "https://eventhub-khaki-five.vercel.app",
-    github: "https://github.com/raonegonemax",
+    github: "https://github.com/raonegone-max",
     isLive: true,
   },
   {
@@ -52,8 +52,8 @@ const projects = [
       "Sidebar conversation history, dynamic prompt suggestions, and contextual chat memory.",
       "Clean, responsive interface with animated typing state and robust error boundaries.",
     ],
-    link: "https://github.com/raonegonemax",
-    github: "https://github.com/raonegonemax",
+    link: "https://github.com/raonegone-max",
+    github: "https://github.com/raonegone-max",
     isLive: false,
   },
 ];

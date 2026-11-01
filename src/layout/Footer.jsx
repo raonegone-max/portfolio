@@ -1,9 +1,8 @@
 import { Github, Linkedin, Twitter, ArrowUp } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/raonegonemax", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/aryan-gupta/", label: "LinkedIn" },
-  { icon: Twitter, href: "https://x.com", label: "Twitter" },
+  { icon: Github, href: "https://github.com/raonegone-max", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/raonegone/", label: "LinkedIn" },
 ];
 
 const footerLinks = [
