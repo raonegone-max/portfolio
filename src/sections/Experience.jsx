@@ -1,189 +1,126 @@
-import { Briefcase, Calendar, GraduationCap, Award, Terminal, CheckCircle2 } from "lucide-react";
+import { Calendar, GraduationCap, Award, Briefcase } from "lucide-react";
 
-const experiences = [
+const milestones = [
   {
     period: "2025 — Present",
     role: "Member & Event Supervisor (Web Development Team)",
-    company: "ACE | Technical Society, VIPS",
+    organization: "ACE | Technical Society, VIPS",
+    stamp: "LEADERSHIP & WEB",
+    stampColor: "bg-[#ffd000] text-black",
     bullets: [
       "Active member of ACE, contributing to the planning and execution of technical and student engagement activities.",
-      "Working with the Web Development team in ACE on real-life projects.",
-      "Worked as Event Supervisor for departmental activities, ensuring smooth execution, adherence to schedules, and effective team coordination.",
+      "Working with the Web Development team in ACE on real-world projects and technical initiatives.",
+      "Served as Event Supervisor for departmental activities, ensuring smooth execution, adherence to schedules, and effective team coordination.",
     ],
     technologies: ["Web Development", "Team Coordination", "Event Supervision", "ACE Society"],
-    current: true,
-    tag: "RESPONSIBILITY_ACE",
     icon: Award,
   },
   {
     period: "2025 — Present",
-    role: "BCA (Bachelor of Computer Applications)",
-    company: "Vivekananda Institute of Professional Studies (VIPS, GGSIPU)",
+    role: "Bachelor of Computer Applications (BCA)",
+    organization: "Vivekananda Institute of Professional Studies (VIPS, GGSIPU)",
+    stamp: "8.65 CGPA",
+    stampColor: "bg-[#44d4c2] text-black",
     bullets: [
-      "Current Academic Performance: CGPA 8.65 in BCA.",
-      "Core focus on C++, C, JavaScript, Modular JS, Data Structures, and scalable full-stack web architectures.",
-      "Actively participate in technical events and workshops organized by ACE.",
+      "Maintaining an 8.65 CGPA with a strong foundation in computer science and software development.",
+      "Core focus on C++, C, JavaScript, Modular JS, Data Structures & Algorithms, and modern web architectures.",
+      "Actively participate in departmental hackathons, workshops, and technical events organized by ACE.",
     ],
-    technologies: ["BCA", "CGPA: 8.65", "C++", "C", "Data Structures", "Algorithms", "Modular JS"],
-    current: true,
-    tag: "BCA_CGPA_8.65",
+    technologies: ["BCA", "CGPA 8.65", "C++", "C", "Data Structures", "Algorithms"],
     icon: GraduationCap,
   },
   {
     period: "2025 — Present",
-    role: "AWS Cloud Practitioner & Full-Stack Deployments",
-    company: "Cloud Computing & Production Platforms",
+    role: "AWS Cloud Practitioner & Web Deployments",
+    organization: "Independent Learning & Cloud Certification",
+    stamp: "AWS CERTIFIED",
+    stampColor: "bg-[#a6e82e] text-black",
     bullets: [
-      "Earned the AWS Cloud Practitioner Essentials certificate (cloud computing and core AWS services).",
-      "Developed and deployed full-stack web applications, including a generative AI-powered interview preparation tool.",
-      "Currently learning Cybersecurity fundamentals, including network security and penetration testing concepts.",
+      "Earned the AWS Cloud Practitioner Essentials certificate, validating knowledge of core AWS services, cloud security, and architecture.",
+      "Architected and deployed full-stack web applications including EventHub and Generative AI-powered interview tools on Vercel & Render.",
+      "Actively expanding technical domain into Cybersecurity fundamentals, network security, and penetration testing concepts.",
     ],
     technologies: ["AWS Cloud Practitioner", "Full-Stack Deployment", "Generative AI", "Cybersecurity"],
-    current: true,
-    tag: "AWS_CERTIFIED",
     icon: Briefcase,
   },
   {
     period: "2025",
-    role: "Senior Secondary (Class XII CBSE) — 87%",
-    company: "St Thomas School, Indrapuram",
+    role: "Class XII (CBSE Board Examination) — 87%",
+    organization: "St Thomas School, Indrapuram",
+    stamp: "CBSE 87%",
+    stampColor: "bg-[#ff6a00] text-white",
     bullets: [
-      "Completed Class XII CBSE board examinations with an 87% aggregate in 2025.",
+      "Graduated senior secondary education with an 87% aggregate in CBSE board examinations in 2025.",
       "Established strong grounding in mathematics, analytical problem solving, and science fundamentals.",
     ],
-    technologies: ["CBSE Board (87%)", "Indrapuram (2025)", "Analytical Problem Solving"],
-    current: false,
-    tag: "CBSE_87%",
+    technologies: ["CBSE Board (87%)", "Indrapuram", "Analytical Problem Solving"],
     icon: GraduationCap,
   },
 ];
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-28 relative overflow-hidden bg-[#070b13] cyber-dots">
-      {/* Background Cyber Accents */}
-      <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2" />
-      <div className="absolute bottom-10 right-10 w-80 h-80 bg-purple-500/10 rounded-full blur-[140px] pointer-events-none" />
+    <section id="experience" className="py-20 px-4 sm:px-8 max-w-4xl mx-auto border-t border-zinc-800/80">
+      {/* Section Header */}
+      <div className="mb-12">
+        <span className="text-xs font-mono font-bold tracking-widest text-[#ffd000] uppercase">
+          // TIMELINE & BACKGROUND
+        </span>
+        <h2 className="font-display text-5xl sm:text-7xl text-white tracking-tight leading-none mt-2">
+          JOURNEY & MILESTONES
+        </h2>
+      </div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-cyan-400 mb-4">
-            <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-            <span>// 04. ACADEMICS_&_RESPONSIBILITIES</span>
-          </div>
+      {/* Timeline with Sticker Stamps */}
+      <div className="relative border-l-2 border-zinc-800 ml-3 sm:ml-4 pl-6 sm:pl-8 space-y-10">
+        {milestones.map((item, idx) => {
+          return (
+            <div key={idx} className="relative group">
+              {/* Timeline node */}
+              <div className="absolute -left-[33px] sm:-left-[41px] top-2 w-4 h-4 rounded-full bg-black border-2 border-white group-hover:border-[#ffd000] transition-colors" />
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-100">
-            Education, Leadership &{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 glow-text">
-              Milestones
-            </span>
-          </h2>
-
-          <p className="text-slate-400 mt-4 text-base sm:text-lg">
-            Academic achievements at VIPS (GGSIPU), technical society leadership at ACE, and project development milestones.
-          </p>
-        </div>
-
-        {/* Timeline Container */}
-        <div className="relative max-w-4xl mx-auto">
-          {/* Vertical Glowing Circuit Line */}
-          <div className="absolute left-4 md:left-1/2 top-4 bottom-4 w-0.5 bg-gradient-to-b from-cyan-400 via-purple-500 to-slate-800 md:-translate-x-1/2 shadow-[0_0_15px_rgba(0,242,254,0.6)]" />
-
-          {/* Timeline Nodes */}
-          <div className="space-y-12">
-            {experiences.map((exp, idx) => (
-              <div
-                key={exp.period + exp.role}
-                className="relative grid md:grid-cols-2 gap-8 items-center"
-              >
-                {/* Node Marker Dot */}
-                <div className="absolute left-4 md:left-1/2 top-6 w-4 h-4 rounded-full bg-[#070b13] border-2 border-cyan-400 md:-translate-x-1/2 z-10 flex items-center justify-center shadow-[0_0_12px_#00f2fe]">
-                  <div className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
-                  {exp.current && (
-                    <span className="absolute -inset-1 rounded-full bg-cyan-400/40 animate-ping" />
-                  )}
+              <div className="p-5 sm:p-6 rounded-2xl studio-card">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                  <span className="text-xs font-mono text-zinc-400 flex items-center gap-1.5">
+                    <Calendar className="w-3.5 h-3.5 text-zinc-500" />
+                    {item.period}
+                  </span>
+                  <span className={`sticker-badge text-[10px] px-2.5 py-0.5 rounded-full ${item.stampColor}`}>
+                    {item.stamp}
+                  </span>
                 </div>
 
-                {/* Left side on even, right side on odd */}
-                <div
-                  className={`pl-12 md:pl-0 ${
-                    idx % 2 === 0
-                      ? "md:pr-12 md:text-right"
-                      : "md:col-start-2 md:pl-12"
-                  }`}
-                >
-                  <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900/90 to-[#0a0f1b] border border-slate-800/80 hover:border-cyan-500/40 transition-all duration-300 hover:-translate-y-1 group hover:shadow-[0_10px_30px_rgba(0,242,254,0.12)]">
-                    {/* Period & Tag */}
-                    <div
-                      className={`flex items-center gap-2 mb-2 ${
-                        idx % 2 === 0 ? "md:justify-end" : ""
-                      }`}
+                <h3 className="text-lg font-bold text-white font-heading">
+                  {item.role}
+                </h3>
+
+                <div className="text-xs text-zinc-400 font-medium mt-0.5 mb-3.5">
+                  {item.organization}
+                </div>
+
+                <ul className="space-y-2 text-xs text-zinc-400 leading-relaxed mb-4">
+                  {item.bullets.map((bullet, bIdx) => (
+                    <li key={bIdx} className="flex items-start gap-2">
+                      <span className="text-[#ffd000] mt-0.5 font-bold">▸</span>
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="flex flex-wrap gap-1.5 pt-3 border-t border-zinc-800/60">
+                  {item.technologies.map((tech, tIdx) => (
+                    <span
+                      key={tIdx}
+                      className="text-[10px] px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800 text-zinc-400 font-mono"
                     >
-                      <span className="text-xs font-mono font-semibold text-cyan-400 flex items-center gap-1.5">
-                        <Calendar className="w-3.5 h-3.5" />
-                        {exp.period}
-                      </span>
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">
-                        {exp.tag}
-                      </span>
-                      {exp.current && (
-                        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center gap-1">
-                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                          CURRENT
-                        </span>
-                      )}
-                    </div>
-
-                    <h3 className="text-lg font-bold text-slate-100 group-hover:text-cyan-300 transition-colors font-heading">
-                      {exp.role}
-                    </h3>
-
-                    <div className="text-xs font-mono text-purple-400 mt-1 mb-3">
-                      {exp.company}
-                    </div>
-
-                    {exp.bullets ? (
-                      <div className="space-y-2 text-xs text-slate-300">
-                        {exp.bullets.map((b, bIdx) => (
-                          <div
-                            key={bIdx}
-                            className={`flex items-start gap-2 ${
-                              idx % 2 === 0 ? "md:justify-end md:text-right" : ""
-                            }`}
-                          >
-                            <span className="text-cyan-400 shrink-0 font-mono text-[11px]">▸</span>
-                            <span className="leading-relaxed">{b}</span>
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      <p className="text-xs text-slate-400 leading-relaxed">
-                        {exp.description}
-                      </p>
-                    )}
-
-                    {/* Technologies Pills */}
-                    <div
-                      className={`flex flex-wrap gap-1.5 mt-4 pt-3 border-t border-slate-800/60 ${
-                        idx % 2 === 0 ? "md:justify-end" : ""
-                      }`}
-                    >
-                      {exp.technologies.map((tech, tIdx) => (
-                        <span
-                          key={tIdx}
-                          className="px-2.5 py-1 text-[10px] font-mono rounded-md bg-slate-950/70 text-slate-300 border border-slate-800/80 group-hover:border-cyan-500/20 transition-colors"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

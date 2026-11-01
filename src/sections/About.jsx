@@ -1,152 +1,125 @@
-import { Code2, Cpu, Rocket, ShieldCheck, Terminal, Sparkles, Workflow, Zap, Award, BookOpen, GraduationCap, CheckCircle } from "lucide-react";
+import { Code2, Workflow, Sparkles, ShieldCheck, GraduationCap, BookOpen, Award } from "lucide-react";
 
 const pillars = [
   {
     icon: Code2,
-    tag: "01",
-    title: "Clean Modular Code",
+    badge: "CLEAN CODE",
+    badgeColor: "bg-[#ffd000] text-black",
+    title: "Modular Codebase",
     description:
-      "Translating complex requirements into clean, responsive, and modular code with React, JavaScript, C++, and modern frontend standards.",
-    accent: "from-cyan-500/20 to-blue-500/10",
-    border: "hover:border-cyan-400/50",
-    iconColor: "text-cyan-400",
+      "Writing clean, maintainable, and type-safe code that adheres to component reusability and modern React patterns.",
   },
   {
     icon: Workflow,
-    tag: "02",
-    title: "Full-Stack & BaaS Synergy",
+    badge: "FULL-STACK",
+    badgeColor: "bg-[#ff6a00] text-white",
+    title: "Full-Stack Synergy",
     description:
-      "Architecting end-to-end web platforms using Node.js, Express.js, MongoDB, RESTful APIs, and BaaS systems like Appwrite.",
-    accent: "from-purple-500/20 to-pink-500/10",
-    border: "hover:border-purple-400/50",
-    iconColor: "text-purple-400",
+      "Bridging intuitive frontend interfaces with resilient Express.js REST APIs, MongoDB schemas, and BaaS systems like Appwrite.",
   },
   {
     icon: Sparkles,
-    tag: "03",
-    title: "Generative AI Engineering",
+    badge: "AI INTEGRATION",
+    badgeColor: "bg-[#ff2a70] text-white",
+    title: "Generative AI Systems",
     description:
-      "Integrating cutting-edge LLM APIs to build automated interview preparation tools, conversational AI, and intelligent workflows.",
-    accent: "from-emerald-500/20 to-teal-500/10",
-    border: "hover:border-emerald-400/50",
-    iconColor: "text-emerald-400",
+      "Leveraging LLM APIs and prompt engineering to build tailored interview planners, conversational tools, and automated pipelines.",
   },
   {
     icon: ShieldCheck,
-    tag: "04",
-    title: "Cloud & Security Mindset",
+    badge: "PRODUCTION",
+    badgeColor: "bg-[#a6e82e] text-black",
+    title: "Security & Cloud",
     description:
-      "AWS Cloud Practitioner Essentials certified, JWT security in HTTP-only cookies, and exploring cybersecurity penetration testing.",
-    accent: "from-amber-500/20 to-orange-500/10",
-    border: "hover:border-amber-400/50",
-    iconColor: "text-amber-400",
+      "Deploying apps on Vercel and Render with JWT authentication in HTTP-only cookies, logout blacklisting, and AWS cloud fundamentals.",
   },
 ];
 
 export const About = () => {
   return (
-    <section id="about" className="py-28 relative overflow-hidden bg-[#06090e]">
-      {/* Background Cyber Accents */}
-      <div className="absolute top-1/2 -left-48 w-96 h-96 bg-cyan-500/5 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-80 h-80 bg-purple-500/5 rounded-full blur-[130px] pointer-events-none" />
-
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left Column: Narrative & Mission (6 cols) */}
-          <div className="lg:col-span-6 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-cyan-400">
-              <Terminal className="w-3.5 h-3.5" />
-              <span>// 01. CORE_PROFILE & PHILOSOPHY</span>
-            </div>
-
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-100 leading-tight">
-              Translating complex ideas into{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400">
-                clean, responsive code.
-              </span>
+    <section id="about" className="py-20 px-4 sm:px-8 max-w-6xl mx-auto border-t border-zinc-800/80">
+      <div className="grid lg:grid-cols-12 gap-10 items-start">
+        {/* Narrative & Bio (6 cols) */}
+        <div className="lg:col-span-6 space-y-6">
+          <div>
+            <span className="text-xs font-mono font-bold tracking-widest text-[#ffd000] uppercase">
+              // ABOUT ME
+            </span>
+            <h2 className="font-display text-5xl sm:text-7xl text-white tracking-tight leading-none mt-2">
+              CODE, SYSTEMS & INTENTION.
             </h2>
-
-            <div className="space-y-4 text-slate-300 text-base leading-relaxed">
-              <p>
-                Aspiring Software Developer with a strong foundation in full-stack web development and a passion for building interactive, user-focused applications. Proficient in React, JavaScript, and backend integration with Appwrite.
-              </p>
-              <p className="text-slate-400">
-                Proven ability to translate complex requirements into clean, responsive code through hands-on project experience. Growing hands-on experience building generative AI-powered applications, and familiar with cloud computing fundamentals (<span className="text-cyan-300 font-medium">AWS Cloud Practitioner Essentials</span>).
-              </p>
-            </div>
-
-            {/* Quick Education & Leadership Highlights */}
-            <div className="grid sm:grid-cols-2 gap-3 pt-2">
-              <div className="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
-                <GraduationCap className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                <div>
-                  <div className="text-xs font-mono font-semibold text-slate-200">
-                    Vivekananda Institute of Professional Studies (VIPS, GGSIPU)
-                  </div>
-                  <div className="text-[11px] font-mono text-cyan-400 mt-0.5">
-                    BCA • CGPA: 8.65
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
-                <BookOpen className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
-                <div>
-                  <div className="text-xs font-mono font-semibold text-slate-200">
-                    St Thomas School, Indrapuram
-                  </div>
-                  <div className="text-[11px] font-mono text-purple-400 mt-0.5">
-                    XII (CBSE) • 87% (2025)
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Cyber Terminal Quote Block */}
-            <div className="rounded-xl bg-slate-900/60 border border-slate-800/90 p-5 font-mono text-xs text-slate-300 relative overflow-hidden">
-              <div className="flex items-center gap-2 text-slate-500 pb-2 mb-2 border-b border-slate-800 text-[11px]">
-                <span className="w-2 h-2 rounded-full bg-cyan-400" />
-                <span>mission_statement.sh</span>
-              </div>
-              <p className="italic text-slate-200">
-                "Software engineering is more than just shipping features — it's about engineering
-                seamless, intuitive experiences that empower users while preserving long-term architectural integrity."
-              </p>
-              <div className="mt-3 text-cyan-400 font-semibold">
-                // Aryan Gupta — Delhi NCR, India
-              </div>
-            </div>
           </div>
 
-          {/* Right Column: 4 Architecture Pillars (6 cols) */}
-          <div className="lg:col-span-6 grid sm:grid-cols-2 gap-5">
-            {pillars.map((item, idx) => (
+          <div className="space-y-4 text-zinc-300 text-sm sm:text-base leading-relaxed">
+            <p>
+              I am an aspiring Software Developer currently pursuing my Bachelor of Computer Applications (BCA) at{" "}
+              <span className="text-white font-medium">Vivekananda Institute of Professional Studies (VIPS, GGSIPU)</span>{" "}
+              with an <span className="text-[#ffd000] font-bold">8.65 CGPA</span>.
+            </p>
+            <p className="text-zinc-400">
+              My technical foundation centers on full-stack web development and user-focused engineering. I have hands-on experience building deployed applications like <span className="text-white font-medium">EventHub</span> (campus RSVP system on Vercel & Render), Generative AI applications with LLM APIs, and BaaS systems with Appwrite.
+            </p>
+            <p className="text-zinc-400">
+              I also serve as an Event Supervisor and Web Development team member in the <span className="text-white font-medium">ACE Technical Society</span> at VIPS, while continuously studying AWS Cloud services and cybersecurity concepts.
+            </p>
+          </div>
+
+          {/* Education Stamp Cards */}
+          <div className="grid sm:grid-cols-2 gap-3 pt-2">
+            <div className="p-4 rounded-xl studio-card relative">
+              <div className="flex items-center gap-2 text-white font-bold text-xs mb-1 font-heading">
+                <GraduationCap className="w-4 h-4 text-[#ffd000]" />
+                <span>VIPS, GGSIPU</span>
+              </div>
+              <div className="text-xs text-zinc-300 font-mono">
+                BCA 
+              </div>
+              <div className="text-[11px] text-zinc-500 font-mono mt-1">2025 — Present</div>
+            </div>
+
+            <div className="p-4 rounded-xl studio-card relative">
+              <div className="flex items-center gap-2 text-white font-bold text-xs mb-1 font-heading">
+                <BookOpen className="w-4 h-4 text-[#44d4c2]" />
+                <span>St Thomas School</span>
+              </div>
+              <div className="text-xs text-zinc-300 font-mono">
+                XII (CBSE) • 87%
+              </div>
+              <div className="text-[11px] text-zinc-500 font-mono mt-1">Indrapuram (2025)</div>
+            </div>
+          </div>
+        </div>
+
+        {/* 4 Core Pillars (6 cols) */}
+        <div className="lg:col-span-6 grid sm:grid-cols-2 gap-4">
+          {pillars.map((item, idx) => {
+            const Icon = item.icon;
+            return (
               <div
                 key={idx}
-                className={`p-6 rounded-2xl bg-gradient-to-br from-slate-900/90 to-[#0a0f18] border border-slate-800/80 ${item.border} transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group relative overflow-hidden`}
+                className="p-5 rounded-2xl studio-card flex flex-col justify-between group"
               >
-                {/* Subtle Card Glow */}
-                <div className={`absolute top-0 right-0 w-28 h-28 bg-gradient-to-bl ${item.accent} rounded-full blur-2xl pointer-events-none group-hover:scale-150 transition duration-500`} />
-
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-11 h-11 rounded-xl bg-slate-800/60 border border-slate-700/60 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <item.icon className={`w-5 h-5 ${item.iconColor}`} />
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-9 h-9 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-white">
+                      <Icon className="w-4 h-4" />
+                    </div>
+                    <span className={`sticker-badge text-[9px] px-2 py-0.5 rounded-md ${item.badgeColor}`}>
+                      {item.badge}
+                    </span>
                   </div>
-                  <span className="font-mono text-xs text-slate-600 group-hover:text-cyan-400 transition-colors">
-                    [{item.tag}]
-                  </span>
+
+                  <h3 className="text-sm font-bold text-white mb-2 font-heading">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-xs text-zinc-400 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
-
-                <h3 className="text-base font-bold text-slate-200 mb-2 font-heading group-hover:text-slate-100">
-                  {item.title}
-                </h3>
-
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  {item.description}
-                </p>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
