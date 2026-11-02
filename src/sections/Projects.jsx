@@ -17,7 +17,7 @@ const projects = [
       "Features a structured preparation roadmap (topics to review, skill gaps, suggested timeline) with decoupled architecture.",
     ],
     link: "https://github.com/raonegone-max",
-    github: "https://github.com/raonegone-max",
+    github: "https://github.com/raonegone-max/GenAI",
     isLive: false,
   },
   {
@@ -35,7 +35,7 @@ const projects = [
       "JWT authentication in HTTP-only cookies with logout token blacklisting and server-enforced capacity limits.",
     ],
     link: "https://eventhub-khaki-five.vercel.app",
-    github: "https://github.com/raonegone-max",
+    github: "https://github.com/raonegone-max/eventhub",
     isLive: true,
   },
   {
@@ -53,7 +53,7 @@ const projects = [
       "Clean, responsive interface with animated typing state and robust error boundaries.",
     ],
     link: "https://github.com/raonegone-max",
-    github: "https://github.com/raonegone-max",
+    github: "https://github.com/raonegone-max/gemini-clone",
     isLive: false,
   },
 ];
@@ -158,7 +158,7 @@ export const Projects = () => {
                   rel="noreferrer"
                   className="inline-flex items-center gap-1 font-bold text-white hover:text-[#ffd000] transition-colors"
                 >
-                  <span>{project.isLive ? "Open Live App" : "Explore Project"}</span>
+                  <span>{project.isLive ? "Open Live App" : "Explore Projects"}</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </a>
 
