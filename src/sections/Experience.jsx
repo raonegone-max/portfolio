@@ -1,6 +1,20 @@
 import { Calendar, GraduationCap, Award, Briefcase } from "lucide-react";
 
 const milestones = [
+    {
+    period: "2026 — Present",
+    role: "AWS Cloud Practitioner & Web Deployments",
+    organization: "Independent Learning & Cloud Certification",
+    stamp: "AWS CERTIFIED",
+    stampColor: "bg-[#a6e82e] text-black",
+    bullets: [
+      "Earned the AWS Cloud Practitioner Essentials certificate, validating knowledge of core AWS services, cloud security, and architecture.",
+      "Architected and deployed full-stack web applications including EventHub and Generative AI-powered interview tools on Vercel & Render.",
+      "Actively expanding technical domain into Cybersecurity fundamentals, network security, and penetration testing concepts.",
+    ],
+    technologies: ["AWS Cloud Practitioner", "Full-Stack Deployment", "Generative AI", "Cybersecurity"],
+    icon: Briefcase,
+  },
   {
     period: "2025 — Present",
     role: "Member & Event Supervisor (Web Development Team)",
@@ -28,20 +42,6 @@ const milestones = [
     ],
     technologies: ["BCA", "CGPA 8.65", "C++", "C", "Data Structures", "Algorithms"],
     icon: GraduationCap,
-  },
-  {
-    period: "2025 — Present",
-    role: "AWS Cloud Practitioner & Web Deployments",
-    organization: "Independent Learning & Cloud Certification",
-    stamp: "AWS CERTIFIED",
-    stampColor: "bg-[#a6e82e] text-black",
-    bullets: [
-      "Earned the AWS Cloud Practitioner Essentials certificate, validating knowledge of core AWS services, cloud security, and architecture.",
-      "Architected and deployed full-stack web applications including EventHub and Generative AI-powered interview tools on Vercel & Render.",
-      "Actively expanding technical domain into Cybersecurity fundamentals, network security, and penetration testing concepts.",
-    ],
-    technologies: ["AWS Cloud Practitioner", "Full-Stack Deployment", "Generative AI", "Cybersecurity"],
-    icon: Briefcase,
   },
   {
     period: "2025",
