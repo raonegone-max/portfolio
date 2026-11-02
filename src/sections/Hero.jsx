@@ -37,7 +37,7 @@ export const Hero = () => {
           <p>
             I'm currently pursuing my BCA at{" "}
             <span className="text-white font-medium">Vivekananda Institute of Professional Studies (VIPS, GGSIPU)</span>{" "}
-            with an <span className="text-white font-semibold"></span>. Passionate about building fast, scalable, and responsive web applications.
+            <span className="text-white font-semibold"></span>. Passionate about building fast, scalable, and responsive web applications.
           </p>
         </div>
 
